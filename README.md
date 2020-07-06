@@ -19,4 +19,4 @@
 
 ## acknowledge
 
-词典：[github.com/github-jinwei/English-Chinese-Dictionary-CSV](https://github.com/github-jinwei/English-Chinese-Dictionary-CSV_
+词典：[github.com/github-jinwei/English-Chinese-Dictionary-CSV](https://github.com/github-jinwei/English-Chinese-Dictionary-CSV)
