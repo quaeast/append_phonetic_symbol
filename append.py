@@ -23,5 +23,4 @@ with open(file_name, 'r') as file:
         file_lines_buffer.append(line)
 
 with open(file_name[0:-3] + ' phonetic' + '.md', 'w+') as file:
-    for line in file_lines_buffer:
-        file.writelines(line)
+    file.writelines(file_lines_buffer)
