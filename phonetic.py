@@ -12,6 +12,7 @@ def get_phonetic(word_list, word):
         s = word_list.loc[word_list['word'] == word]['phonetic'].item()
         return s
     except Exception:
+        print(Exception)
         return 'Not found!'
 
 
