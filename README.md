@@ -5,7 +5,7 @@
 为英语单词添加音标，例：
 
 ```
-# 原格式，markdown 有序列表
+# 原格式，markdown 有序列表，推荐使用markdown
 1. sheeny
 
 # 自动添加结果
@@ -15,7 +15,7 @@
 ## 使用
 
 1. 修改 `append.py` 的 `filename` 变量
-2. 运行
+2. 运行，生成新文件。
 
 ## acknowledge
 
