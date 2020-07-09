@@ -1,7 +1,7 @@
 import re
 import phonetic
 
-file_name = '/Users/fang/Desktop/词汇.md'
+file_name = ''
 
 is_word = r'(\d+\.[\s\t\n]+)(\w+)(.*)'
 has_phonetic = r'\d\.[\s\t\n]+\w+[\s\t\n]+\[.+\]'
@@ -18,7 +18,7 @@ with open(file_name, 'r') as file:
         if is_word_match_obj and has_phonetic_match_obj is None:
             striped_word = is_word_match_obj[2]
             word_phonetic = phonetic.get_phonetic(word_list, striped_word)
-            line = is_word_match_obj[1] + is_word_match_obj[2] + ' [' + word_phonetic + ']' + is_word_match_obj[3] + '\n'
+            line = is_word_match_obj[1] + is_word_match_obj[2] + ' ' + word_phonetic + is_word_match_obj[3] + '\n'
 
         file_lines_buffer.append(line)
 

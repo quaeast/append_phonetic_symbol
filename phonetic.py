@@ -10,12 +10,14 @@ def get_word_list():
 def get_phonetic(word_list, word):
     try:
         s = word_list.loc[word_list['word'] == word]['phonetic'].item()
-        return s
+        if isinstance(s, str):
+            return '[' + s + ']'
+        else:
+            return ''
     except Exception:
-        print(Exception)
-        return 'Not found!'
+        return ''
 
 
 if __name__ == '__main__':
     my_word_list = get_word_list()
-    get_phonetic(my_word_list, 'llllllll')
+    print(get_phonetic(my_word_list, 'ganster'))
